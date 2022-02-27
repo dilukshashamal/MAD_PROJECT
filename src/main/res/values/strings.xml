@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">Touch</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="email">Email</string>
-    <string name="need_new_account_sign_up">Need New Account? Sign Up</string>
-    <string name="login">Login</string>
-    <string name="password">Password</string>
+    <string name="app_name">Blog</string>
+    <string name="blog1"><a href ="https://us.cnn.com/?iref=intlglobal/index.html">CNN News</a></string>
+    <string name="blog2"><a href ="https://www.bbc.com/news">BCC News</a></string>
+    <string name="blog3"><a href ="https://www.aljazeera.com/news/">ALJAZEERA News</a></string>
+    <string name="blog4"><a href ="http://www.adaderana.lk/">ADA DERANA</a></string>
+    <string name="blog5"><a href ="https://www.sundaytimes.lk/">THE SUNDAY TIMES</a></string>
+    <string name="blog6"><a href ="https://epaper.sundayobserver.lk/">SUNDAY OBSERVER</a></string>
+    <string name="blog7"><a href ="https://www.discovery.com/shows">Discovery</a></string>
+    <string name="blog8"><a href ="https://www.nationalgeographic.com/">National Geographic</a></string>
+    <string name="blog9"><a href ="https://www.cricbuzz.com/">Cricbuzz</a></string>
+    <string name="blog10"><a href ="https://www.espncricinfo.com/">ESPN cricinfo</a></string>
+
 </resources>
