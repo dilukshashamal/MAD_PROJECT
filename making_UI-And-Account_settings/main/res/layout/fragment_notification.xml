@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.NotificationFragment"
+    android:background="#e0f7fa">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout_notifications"
+        android:paddingVertical="7dp"
+        android:background="@color/primaryColor">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/notifications_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="Notifications"
+                    android:textColor="@color/buttonTextDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_layout_notifications">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:background="#e0f7fa">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.SearchFragment"
+    android:background="#e0f7fa">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout_search"
+        android:background="@color/primaryColor">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/search_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="Search..."
+                    android:drawableLeft="@drawable/round_search_black_24"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/inputs_background"
+                    android:paddingEnd="25dp"
+                    android:paddingStart="10dp"
+                    android:paddingVertical="10dp"
+                    android:elevation="10dp"
+                    android:inputType="text"
+                    android:layout_margin="12dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar_layout_search">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_layout_search">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</RelativeLayout>
